@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.dell.touchapp.MyViewGroup
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <com.example.dell.touchapp.MyViewGroup1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="显示00000"
+
+                >
+
+                <com.example.dell.touchapp.MyVg1TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我是vg1的textview" />
+            </com.example.dell.touchapp.MyViewGroup1>
+
+            <com.example.dell.touchapp.MyViewGroup2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000ff"
+                android:padding="30dp">
+
+                <com.example.dell.touchapp.MyVg2TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我是vg2的textview"
+                    android:textColor="#ffffff" />
+            </com.example.dell.touchapp.MyViewGroup2>
+        </com.example.dell.touchapp.MyViewGroup>
+
+        <com.example.dell.touchapp.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="测试文本" />
+    </LinearLayout>
+
+
+</LinearLayout>
